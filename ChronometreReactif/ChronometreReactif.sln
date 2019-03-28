@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChronoWPF", "ChronoWPF\ChronoWPF.csproj", "{6317B316-0B90-47B8-9079-C001D9F91E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChronoBibliotheque", "ChronoBibliotheque\ChronoBibliotheque.csproj", "{82917B29-7392-433D-94F5-0338DEF125EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6317B316-0B90-47B8-9079-C001D9F91E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6317B316-0B90-47B8-9079-C001D9F91E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6317B316-0B90-47B8-9079-C001D9F91E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6317B316-0B90-47B8-9079-C001D9F91E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82917B29-7392-433D-94F5-0338DEF125EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82917B29-7392-433D-94F5-0338DEF125EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82917B29-7392-433D-94F5-0338DEF125EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82917B29-7392-433D-94F5-0338DEF125EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6BC9C4D-8C58-4494-B28C-EB64813926E2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿<Window x:Class="ChronoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:tobii="clr-namespace:Tobii.Interaction.Wpf;assembly=Tobii.Interaction.Net"
+        xmlns:local="clr-namespace:ChronoWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="369.141" Width="439.062">
+    <Grid
+          tobii:Behaviors.IsGazeAware="True">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="maTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Pas de chronomètre lancé" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" FontSize="36"
+          tobii:Behaviors.IsGazeAware="True"
+          tobii:Behaviors.HasGazeChanged="updateTime" Height="169" Width="216" TextAlignment="Center">
+
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Background" Value="White" />
+                    <!--
+                    <Style.Triggers>
+                        <Trigger Property="tobii:Behaviors.HasGaze" Value="True">
+                            <Setter Property="Background" Value="Magenta" />
+                            <Setter Property="Text" Value="Magenta" />
+                        </Trigger>
+                    </Style.Triggers>
+                    -->
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <Button Grid.Column="0" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="431" Height="113" Content="Démarrer" Click="startChrono"></Button>
+    </Grid>
+</Window>
